@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = joblib.load('bankrupt_model_final.pkl')
+model = joblib.load('bankruptcy_model_final.pkl')
 
 st.title(" Financial Status Predictor")
 
