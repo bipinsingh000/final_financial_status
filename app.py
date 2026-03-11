@@ -20,7 +20,7 @@ f3 = st.number_input("EBIT_total_assets")
 f4 = st.number_input("Sales_total_assets")
 f5 = st.number_input("Gross_profit_current_liabilities")
 f6 = st.number_input("Net_profit_total_liabilities")
-f7 = st.number_input("Operating_profit_total_assets")
+f7 = st.number_input("Operating_profit_total_assets2")
 f8 = st.number_input("Sales_inventory")
 
 #Prediction button
