@@ -14,14 +14,14 @@ st.sidebar.header("Financial Ratios")
 
 #Input fields
 
-f1 = st.sidebar.number_input("Net_profit_total_assets" )
-f2 = st.sidebar.number_input("Total_liabilities_total_assets")
-f3 = st.sidebar.number_input("EBIT_total_assets")
-f4 = st.sidebar.number_input("Sales_total_assets")
-f5 = st.sidebar.number_input("Gross_profit_current_liabilities")
-f6 = st.sidebar.number_input("Net_profit_total_liabilities")
-f7 = st.sidebar.number_input("Operating_profit_total_assets")
-f8 = st.sidebar.number_input("Sales_inventory")
+f1 = st.number_input("Net_profit_total_assets" )
+f2 = st.number_input("Total_liabilities_total_assets")
+f3 = st.number_input("EBIT_total_assets")
+f4 = st.number_input("Sales_total_assets")
+f5 = st.number_input("Gross_profit_current_liabilities")
+f6 = st.number_input("Net_profit_total_liabilities")
+f7 = st.number_input("Operating_profit_total_assets")
+f8 = st.number_input("Sales_inventory")
 
 #Prediction button
 #Prediction button
