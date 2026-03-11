@@ -26,7 +26,7 @@ f14 = st.sidebar.number_input("Operating_expenses_total_liabilities",   0.00,  5
 f15 = st.sidebar.number_input("Sales_inventory",          0.50, 10.00,  3.50)
 
 if st.button("financial_status", use_container_width=True):
-    data = np.array([[f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15]])
+    data = pd.DataFrame([[f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15]])
     prediction = model.predict(data)
     
     if prediction[0] == 1:
