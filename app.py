@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-model = pickle.load(open("bankruptcy_model_final.pkl","rb"))
+model = pickle.load(open("./bankruptcy_model_final.pkl","rb"))
 
 st.title("Financial Status Predictor")
 
