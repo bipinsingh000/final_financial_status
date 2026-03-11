@@ -31,37 +31,35 @@ f14 = st.sidebar.number_input("Operating_expenses_total_liabilities", 0.00, 5.00
 f15 = st.sidebar.number_input("Sales_inventory", 0.50, 10.00, 3.50)
 
 #Prediction button
+#Prediction button
 
 if st.button("Check Financial Status", use_container_width=True):
-    
 
     data = pd.DataFrame(
-        
-        
-       [[f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15]],
-        
-       columns=[
-        "Net_profit_total_assets",
-        "Total_liabilities_total_assets",
-        "Working_capital_total_assets",
-        "Current_assets_current_liabilities",
-        "EBIT_total_assets",
-        "Sales_total_assets",
-        "Equity_total_assets",
-        "Gross_profit_current_liabilities",
-        "Net_profit_sales",
-        "Operating_profit_total_assets",
-        "Net_profit_total_liabilities",
-        "Operating_profit_total_assets2",
-        "Gross_profit_sales",
-        "Operating_expenses_total_liabilities",
-        "Sales_inventory"
-    ]
-)
+        [[f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15]],
+        columns=[
+            "Net_profit_total_assets",
+            "Total_liabilities_total_assets",
+            "Working_capital_total_assets",
+            "Current_assets_current_liabilities",
+            "EBIT_total_assets",
+            "Sales_total_assets",
+            "Equity_total_assets",
+            "Gross_profit_current_liabilities",
+            "Net_profit_sales",
+            "Operating_profit_total_assets",
+            "Net_profit_total_liabilities",
+            "Operating_profit_total_assets2",
+            "Gross_profit_sales",
+            "Operating_expenses_total_liabilities",
+            "Sales_inventory"
+        ]
+    )
 
-prediction = model.predict(data)
+    prediction = model.predict(data)
 
-if prediction[0] == 1:
-    st.error("⚠ Financially Weak Company")
-else:
-    st.success("✅ Financially Strong Company")
+    if prediction[0] == 1:
+        st.error("⚠ Financially Weak Company")
+    else:
+        st.success("✅ Financially Strong Company")
+
