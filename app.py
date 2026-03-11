@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
+import pandas as pd
 
 model = joblib.load('bankruptcy_model_final.pkl')
 
